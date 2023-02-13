@@ -1,0 +1,27 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(rgb(4, 129, 247),rgb(73, 45, 98));
+}
+
+body.active{
+  margin:0;
+  padding: 0;
+  background-image: linear-gradient(rgb(73, 45, 98), rgb(4, 129, 247));
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 2rem;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste lógico de idade</title>
+    <style>
+        body {
+            background-color:rgb(106, 106, 141);
+        }
+        h1 {
+            display: flex;
+            color: white;
+        }
+        p {
+            display: flex;
+            color: white;
+            margin: 3px;
+        }
+        input {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        input #age {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Será que sou de maior idade</h1>
+    <p>Digite sua idade: <input type="number" name="age" id="age"  placeholder="Inserir Idade"> anos.</p>
+    <br>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div class="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var age = window.document.querySelector('input#age')
+            var res = window.document.querySelector('div.res')
+            var anos = Number(age.value)
+            if (anos > 18) {
+                res.innerHTML += '<p>Você é maior de idade.</p>'
+            } else
+            res.innerHTML += '<p>Você é menor de idade.</P>'
+        }
+    </script>
+</body>
+</html>
