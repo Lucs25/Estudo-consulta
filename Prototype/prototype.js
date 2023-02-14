@@ -1,4 +1,4 @@
-/* //EX1
+//EX1
 
 function Pessoa(nome, idade) {
   this.nome = nome;
@@ -9,12 +9,12 @@ Pessoa.prototype.andar = function() {
   return this.nome + ' andou';
 }
 
-
 const andre = new Pessoa('André', 28);
 
-console.log(andre,(andre.andar())); // retorna o objeto
-console.log(andre,(andre.andar()));
- */
+console.log(andre,(andre.andar())); //Pessoa { nome: 'André', idade: 28 } André andou
+console.log(Pessoa.prototype); // retorna o objeto
+console.log(andre.prototype); // undefined
+
 
 /* //EX2
 
@@ -28,8 +28,7 @@ cidade.charAt(0); // R
 String.prototype;
  */
 
-/*
-//EX3
+/* //EX3
 Array.prototype.slice.call(lista);
 Array.from(lista);
 
@@ -55,4 +54,3 @@ const Lucas1 = new Pessoa('Lucas', 'Raymundo', '29');
 
 console.log(Lucas1.nomeCompleto());
  */
-

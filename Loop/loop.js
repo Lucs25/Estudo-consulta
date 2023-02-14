@@ -15,7 +15,7 @@ const newCarros = carros.map(item =>
   'Carro ' + item
 );
 
-console.log(newCarros); // [undefined, undefined, undefined];
+console.log(newCarros); // [ 'Carro Ford', 'Carro Fiat', 'Carro Honda' ];
  */
 
 /* //EX3
@@ -43,8 +43,14 @@ const tempoAulas = aulas.map(aula => aula.min);
 console.log(tempoAulas);
 // [15, 10, 20, 25];
 
+
+/* //alternativa 1
 const puxarNomes = aula => aula.nome;
 const nomesAulas = aulas.map(puxarNomes);
-console.log(puxarNomes);
-// ['HTML 1', 'HTML 2', 'CSS 1', 'JS 1']
- */
+console.log(nomesAulas);
+// ['HTML 1', 'HTML 2', 'CSS 1', 'JS 1'] */
+
+/* //alternativa2
+const nomesAulas = aulas.map(aula => aula.nome);
+console.log(nomesAulas);
+// ['HTML 1', 'HTML 2', 'CSS 1', 'JS 1'] */

@@ -11,7 +11,7 @@ function areaQuadrados(quadrado) {
 
 console.log(areaQuadrados(2)); */
 
-/* EX3
+/* //EX3
 
 addEventListener('click', function() {
   console.log('ciclou')
@@ -27,8 +27,8 @@ function imc(peso, altura) {
 console.log(imc(80, 1.80)); // retorna o imc
 console.log(imc(820, 1.80)); // retorna o imc e undefined */
 
-/* EX5
--------------------------------------------------------------
+/* //EX5
+
 function terceiraIdade(idade) {
   if (typeof idade === 'number') {
       if (idade >= 60) {
@@ -37,14 +37,12 @@ function terceiraIdade(idade) {
       console.log('abaixo de 60');
     }
   }
-    console.log('é string');
-
 }
 
-terceiraIdade('aaaa'); */
+terceiraIdade(10); */
 
-/* EX6
--------------------------------------------------------------
+/* //EX6
+
 var profissao = 'Designer';
 
 var profissao = 'Designer';
@@ -53,6 +51,7 @@ function dados() {
   var nome = 'André';
   var idade = 28;
   function outrosDados() {
+    var nome = 'Felipe';
     var endereco = 'Rio de Janeiro';
     var idade = 29;
     return `${nome}, ${idade}, ${endereco}, ${profissao}`;

@@ -13,7 +13,7 @@ for (var i = 0; i < videoGames.length; i++) {
   console.log(videoGames[i]);
 } */
 
-/*//EX3
+/* //EX3
 
 var scroll = 1000
 
@@ -28,4 +28,3 @@ var possuiCarro = false
 var darCredito = ( possuiCarro || possuiCarro)? "Dar Credito" : "Negar Crédito"
 
 console.log(darCredito) */
-
