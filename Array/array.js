@@ -25,7 +25,6 @@ const arrayCopia = carros.fill('Ferrari',2)
 console.log(arrayCopia)
  */
 
-
 /* //EX4
 
 const transporte1 = ['Barco', 'Aviao'];
@@ -37,4 +36,9 @@ const maisTransportes = [].concat(transporte1, transporte2, 'Van'); // ['Barco',
 console.log(maisTransportes)
  */
 
+/* //EX5 Selecionar o último elemtno da array
 
+var array = [1, 2, 3, 4, 5];
+var ultimo = array[array.length - 1];
+console.log(ultimo);
+ */
