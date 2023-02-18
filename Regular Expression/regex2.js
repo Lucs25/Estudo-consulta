@@ -36,4 +36,28 @@ console.log(regexp3)
 // X@origamid.com
  */
 
+/* //EX4 LINE FEED \N O \n irá selecionar o final de uma linha, quando criamos uma nova.
+const regexp = /\n/g;
+
+const regexp1 = `andre@origamid.com \n contato@origamid.com`.replace(regexp, '---');
+console.log(regexp1)
+// andre@origamid.com---contato@origamid.com
+
+const regexp2 =`andre@origamid.com
+contato@origamid.com`.replace(regexp, ' XXX ');
+console.log(regexp2)
+// andre@origamid.com XXX contato@origamid.com
+*/
+
+/* //EX5 UNICODE \U O \u irá selecionar o respectivo caracter unicode, de acordo com o código passado em \uXXXX. Ex: \u0040 seleciona o @.
+// Procura: @ ou ©
+const regexp = /\u0040|\u00A9/g;
+
+const regexp1 = 'andre@origamid.com ©'.replace(regexp, '---');
+console.log(regexp1);
+// andre---origamid.com ---
+
+ */
+
+/* document.getElementById("demo").innerHTML = regexp1 */
 /* console.log(regexp1); */
