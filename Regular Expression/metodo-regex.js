@@ -54,7 +54,7 @@ regexp.exec(frase); // Reinicia
 // TypeScript e CoffeeScript", groups: undefined]
  */
 
-//EX5 STR.MATCH(): O match() é um método de strings que pode receber como argumento uma Regexp. Existe uma diferença de resultado quando utilizamos a flag g ou não.
+/* //EX5 STR.MATCH(): O match() é um método de strings que pode receber como argumento uma Regexp. Existe uma diferença de resultado quando utilizamos a flag g ou não.
 
 const regexp = /\w{2,}/g;
 const regexpSemG = /\w{2,}/;
@@ -63,7 +63,7 @@ const frase = 'JavaScript, TypeScript e CoffeeScript';
 console.log(frase.match(regexp))
 // ['JavaScript', 'TypeScript', 'CoffeeScript']
 
-
 console.log(frase.match(regexpSemG))
 // ["JavaScript", index: 0, input: "JavaScript,
 // TypeScript e CoffeeScript", groups: undefined]
+*/

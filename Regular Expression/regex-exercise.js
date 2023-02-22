@@ -28,7 +28,7 @@ for(cpf of cpfs) {
 }
  */
 
-//EX3
+/* //EX3
 const regexpCNPJ = /\d{2}[-.]?(?:\d{3}[-.]?){2}[-\/]?\d{4}[-.]?\d{2}/g;
 
 const cnpjs = [
@@ -43,9 +43,5 @@ const cnpjs = [
 for(cnpj of cnpjs) {
   console.log(cnpj, cnpj.match(regexpCNPJ));
 }
+ */
 
-
-
-/*const regexp1 =
-console.log(regexp1); */
-/* document.getElementById("demo").innerHTML = regexp1 */

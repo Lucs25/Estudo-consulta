@@ -53,9 +53,7 @@ const fraseArray = [...frase];
 console.log(fraseArray);
  */
 
-//Desafio1
-
-/* // Reescreva a função utilizando
+/* //Desafio1 // Reescreva a função utilizando
 // valores iniciais de parâmetros com ES6
 function createButton(background = 'blue', color = 'red') {
   const buttonElement = document.createElement('button');
