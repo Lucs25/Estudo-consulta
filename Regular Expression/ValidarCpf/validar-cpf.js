@@ -6,7 +6,7 @@ export default class ValidarCpf {
     return cpf.replace(/\D/g, '');
   }
   construir(cpf) {
-    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,'$1.$2.$3-$2');
+    return cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2})/g,'$1.$2.$3-$4');
   }
   formatar(cpf) {
     const cpfLimpo = this.limpar(cpf);
@@ -14,13 +14,18 @@ export default class ValidarCpf {
   }
   validar(cpf) {
     const matchCpf= cpf.match(/(?:\d{3}[-.\s]?){3}\d{2}/g);
-    return (matchCpf && matchCpf[0] === cpf)
+    return (matchCpf && matchCpf[0] === cpf);
   }
-  validarNaMudanca(cpfElment) {
-    if(this.validar(cpfElment.value)) {
-      cpfElment.value = this.formatar(cpfElment.value);
+  validarNaMudanca(cpfElement) {
+    if(this.validar(cpfElement.value)) {
+      cpfElement.value = this.formatar(cpfElement.value);
+      cpfElement.classList.add('valido')
+      cpfElement.classList.remove('erro');
+      cpfElement.nextElementSibling.classList.remove('ativar');
     } else {
-      
+      cpfElement.classList.add('erro');
+      cpfElement.classList.remove('valido');
+      cpfElement.nextElementSibling.classList.add('ativar');
     }
   }
   adicionarEvento() {
@@ -28,8 +33,15 @@ export default class ValidarCpf {
       this.validarNaMudanca(this.element);
     })
   }
+  adicionarErrorSpam(){
+    const erroElement = document.createElement('span');
+    erroElement.classList.add('erro-text');
+    erroElement.innerText = 'CPF Inválido';
+    this.element.parentElement.insertBefore(erroElement, this.element.nextElementSibling);
+  }
   iniciar() {
     this.adicionarEvento();
+    this.adicionarErrorSpam();
     return this;
   }
 }
